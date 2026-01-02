@@ -1,5 +1,6 @@
 import tkinter as tk
 from datetime import datetime, timedelta
+import matplotlib.pyplot as plt
 
 class Timer:
     # this makes the timer part of the app
@@ -68,10 +69,24 @@ class Graph_Display:
         self.graph_button.place(x=20, y=550)  # positioned bottom-left
 
     def show_graph(self):
-        # temporary placeholder
-        graph_label = tk.Label(self.window, text="(Graph will be displayed here)", font=("Arial", 16))
-        graph_label.pack(pady=20)
-
+        #this shows a fraph however i have ran into  a problem which is that this is shown using pycharm ask hamfflet on how to male it tkinter
+        days = ["Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"] # temp values
+        minutes_studied = [0, 30, 45, 60, 90, 99] # more temp values
+        # this for loop controls the colour of the bad depending on how much work the user has doen
+        colours = []
+        for minutes in minutes_studied:
+            if minutes == 0:
+                colours.append("red")
+            elif minutes < 30:
+                colours.append("orange")
+            else:
+                colours.append("green")
+                # this just dispalays the grph
+        plt.bar(days, minutes_studied, color=colours)
+        plt.title("Graph of Sessions")
+        plt.xlabel("Days")
+        plt.ylabel("Study Time")
+        plt.show()
 
 class MyGUI:
     # this is the main window of the app
