@@ -1,6 +1,8 @@
 import tkinter as tk
 from datetime import datetime, timedelta
 import matplotlib.pyplot as plt
+import winsound
+
 
 class Timer:
     # this makes the timer part of the app
@@ -40,9 +42,13 @@ class Timer:
         self.end_time = datetime.now() + timedelta(seconds=self.time_left)
         self.count_down()
 
-    def stop_timer(self):
+    def stop_timer(self): #
         self.is_running = False
         self.timer_label.config(text="Stopped")
+
+    def play_alarm(self): #  Alarm that actually plays
+        import winsound
+        winsound.Beep(1000, 10000)
 
     def count_down(self):
         # checks if the timer is running
@@ -53,11 +59,12 @@ class Timer:
             if total_seconds <= 0:
                 self.timer_label.config(text="00:00")
                 self.is_running = False
-                print("Time’s up!")  # placeholder for alarm feature
+                self.play_alarm()  # An alarm has been added
             else:
                 mins, secs = divmod(total_seconds, 60)
                 self.timer_label.config(text=f"{mins:02d}:{secs:02d}")
                 self.window.after(1000, self.count_down)  # updates every second
+
 
 
 class Graph_Display:
