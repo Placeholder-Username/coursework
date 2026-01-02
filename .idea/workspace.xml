@@ -76,7 +76,7 @@
       <option name="presentableId" value="Default" />
       <updated>1765646057964</updated>
       <workItem from="1765646059028" duration="2814000" />
-      <workItem from="1767362903457" duration="1135000" />
+      <workItem from="1767362903457" duration="2196000" />
     </task>
     <task id="LOCAL-00001" summary="making the graph Gui">
       <option name="closed" value="true" />
@@ -86,7 +86,23 @@
       <option name="project" value="LOCAL" />
       <updated>1767363205462</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="making the graph Gui">
+      <option name="closed" value="true" />
+      <created>1767364190495</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1767364190495</updated>
+    </task>
+    <task id="LOCAL-00003" summary="making the graph Gui">
+      <option name="closed" value="true" />
+      <created>1767364198430</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1767364198430</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
