@@ -88,7 +88,7 @@ class Timer:
                 self.window.after(1000, self.count_down)  # updates every second
 
 
-# This class is responcible for motivatint the user to work harder
+# This class is responsible for motivating the user to work harder
 class Study_projector:
     def __init__(self, window):
         self.window = window
@@ -146,7 +146,7 @@ class Graph_Display:
         days = ["Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday"] # temp values
         minutes_studied = [0, 30, 45, 60, 90, 99] # more temp values
 
-        # this for loop controls the colour of the bad depending on how much work the user has doen
+        # this for loop controls the colour of the bad depending on how much work the user has done
         colours = []
         for minutes in minutes_studied:
             if minutes == 0:
