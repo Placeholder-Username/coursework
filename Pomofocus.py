@@ -46,9 +46,7 @@ class Timer:
         self.session_seconds = int(user_input) * 60
         self.time_left = self.session_seconds
         self.is_running = True
-        self.end_time = datetime.now() + timedelta(seconds=self.time_left)
-        self.count_down()
-
+        
         # datetime library gives a more accurate countdown
         self.end_time = datetime.now() + timedelta(seconds=self.time_left)
         self.count_down()
